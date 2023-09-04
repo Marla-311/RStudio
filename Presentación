@@ -1,0 +1,438 @@
+---
+title: "RStudio"
+author: "Marla Rangel"
+date: "29/08/2023"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## ¿Qué es R?
+
+R es un *lenguaje orientado a objetos* y un entorno de programación que dispone de: 
+
+- Almacenamiento y manipulación de datos.
+
+- Operadores para cálculo.
+
+- Herramientas para análisis de datos.
+
+- Posibilidades gráficas para análisis de datos.
+
+![Imagen de R](https://i.blogs.es/3eae46/650_1000_rlogo/450_1000.png)
+
+
+## ¿Qué es RStudio?
+
+RStudio es un *Un entorno amigable diseñado para R* que permite realizar los procedimientos de manera más sencilla e intuitiva.  
+
+![Imagen de RStudio](https://blog.desdelinux.net/wp-content/uploads/2019/02/rstudio-og.png)
+
+
+## Flujo de trabajo en R
+
+![Trabajo](https://scontent.fmex43-1.fna.fbcdn.net/v/t39.30808-6/373295376_6592556534192242_5681698648673480350_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeGB-T0d91WLgg2Rt5MWeWqLzwHLObrXSP3PAcs5utdI_eaH4D-9cK8d4MQIiv_vSGrTjKoIcqk80i_FaPg6ejii&_nc_ohc=AtCg9W_AqRMAX-nQHbR&_nc_oc=AQmc3KYXdgLlCJlUduxR5fIfjLeazNjiZUq6aPmWUXzsM8EMl6qAYnZhc088XIEa25Ot21PPbK6IFFW_9ibWtuh2&_nc_ht=scontent.fmex43-1.fna&oh=00_AfDA2uKzk9iLF4BhzKaLEXp21vK6EkRUfPd7WLAoH_pm4Q&oe=64FA4282)
+
+
+## Instalación de R y RStudio
+
+En el siguiente link encontramos como descargar R base y R estudio 
+
+<https://r-basico.aprendr.org/index.html>
+
+
+
+## Ambiente de RStudio
+
+![RStudio interfaz](https://docs.posit.co/ide/user/ide/guide/ui/images/rstudio-panes-labeled.jpeg){width=850px}
+
+
+## Source
+
+
+![Fuente](https://scontent.fmex43-1.fna.fbcdn.net/v/t39.30808-6/373531305_6592556577525571_2591448861029140837_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeE54seMgiEar_AkwJqspNeDQRVOx95zFcFBFU7H3nMVwX-BFG_0gTMUw_upyZ1oX3e2kwOs7Fb_UtWncq1GPOCn&_nc_ohc=0d_rTa9VHZoAX9qbf_L&_nc_ht=scontent.fmex43-1.fna&oh=00_AfBnSaLGi4s2AHIIr_8MjyW5NnqH01ULE3gpS1-DzDztPw&oe=64FA6BE6)
+
+
+## Environments
+
+
+![Entorno](https://scontent.fmex43-1.fna.fbcdn.net/v/t39.30808-6/373528571_6592556590858903_3061102797010961588_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeG-hwpCiFeASS0mGg61Xw3WXxsb8cEhgMJfGxvxwSGAwnspva1xz61ESJ9Fjgu1OlE1D_UjNTISie9RZZUINanl&_nc_ohc=cfzmd5daaIUAX-lZQLL&_nc_ht=scontent.fmex43-1.fna&oh=00_AfCK7BR7mQs7gyyJ0Y8FJLAQZIsf_XkIRYOryNTDqMjWSQ&oe=64FA6CF3)
+
+
+## Console
+
+
+![Consola](https://scontent.fmex43-1.fna.fbcdn.net/v/t39.30808-6/372671284_6592556697525559_4596405847185835885_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeElOjtteosdiok7nQAJCRVF6e84WbWZ-tzp7zhZtZn63Ge7kP5N3BxR6FNvBu2CgvoCZHAiNfeTq64r1gY2M-Zq&_nc_ohc=O1-TT6wIBaYAX9Jni3C&_nc_ht=scontent.fmex43-1.fna&oh=00_AfDrgiXaxjhMNCXnQlky-W06IZAjaPCJNgn5P9ED01t6Cg&oe=64FBBFE9)
+
+
+## Output 
+
+
+![Resultados](https://scontent.fmex43-1.fna.fbcdn.net/v/t39.30808-6/373712118_6592556580858904_5078700586385139576_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeF_b_fJL65voQR9fv9UabhfbcclQVVzil5txyVBVXOKXurhyCXsJ2cxRxSiyhJMraS5fuWp-J1S6LAkcHO2KWVo&_nc_ohc=WkZrqvM1JpAAX-_vWoS&_nc_ht=scontent.fmex43-1.fna&oh=00_AfDYR0i4iw92hwvyhrIkFCtPBaw54-PJA-9VfsCDdvfyIw&oe=64FAE073)
+![Resultados](https://scontent.fmex43-1.fna.fbcdn.net/v/t39.30808-6/374833939_6592556610858901_1855858754059120393_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeGJoUDEqfVKfeS2Q8xFLnCl23qEMrd1hHfbeoQyt3WEd9L0wy4oYtREH2Ek5ME0-5zGwj0LL4vrFlkd1L_G2psO&_nc_ohc=fk8Wrgyyjx4AX-j9yg3&_nc_ht=scontent.fmex43-1.fna&oh=00_AfAChhHtXhvU2HTBreeL-RpUPrUAAiNNIexYfGJRRWHwOg&oe=64FB7203)
+
+
+## Ventajas de R y RStudio
+
+- Ejecución linea por liena con `Ctrl + Enter`
+- Disponibilidad de acceder a historico, editor, enviroment y mas utilidades
+- Sintaxis a color para un desarrollo mas sencillo
+- Corrección de errores
+- Depuración controlada 
+- Es software libre
+
+
+
+## Scripts
+
+Los scripts son **simples** archivos de texto que se guardan con una extension `.R`.
+Estos archivos pueden ser ejecutados línea por línea o en su totalidad con el boton de **Run**.
+
+![Script](http://mercury.webster.edu/aleshunas/R_learning_infrastructure/images/RStudio%20-%20new%20script%20menu.png)
+
+## Objetos
+
+¿Qué es un objeto? Solo un nombre que puede utilizar para recuperar los datos almacenados. Por ejemplo, puede guardar datos en un objeto como a o b. 
+
+Para crear un objeto R, elija un nombre y luego use el símbolo menor que, <, seguido de un signo menos, -, para guardar los datos en él. Esta combinación parece una flecha, <-
+
+```{r echo=TRUE}
+a <- 5
+b <- 6
+```
+
+Una manera muy cómoda de manejar un "conjunto de datos" es generar variables que contengan nuestros datos. Para lo cual  usamos un comando de **asignación** `<-` de valores o caracteres, a variables, como en el ejemplo siguiente:
+
+```{r echo=TRUE} 
+mi.variable <- 42
+manzanas <- 5
+naranjas <- 7
+mi.fruta <- manzanas + naranjas
+```
+
+*Nota* Puede nombrar un objeto en R casi cualquier cosa que desee, pero hay algunas reglas. Primero, un nombre no puede comenzar con un número. Segundo, un nombre no puede usar algunos símbolos especiales, como ^,!, $, @, +, -, /, o *:
+
+
+## Operciones básicas en R 
+
+*Operaciones Aritméticas*
+
+1. ( + Adicción)
+2. ( - Sustracción)
+3. ( * Multiplicación)
+4. ( / División)
+5. ( ^ Exponente )
+6. ( %/% division entera)
+7. (sqrt() raíz cuadrada)
+8. ( %% Módulo lo que sobra (residuo) al dividir  dos números)
+
+
+## Operaciones básicas en R
+
+*Operaciones lógicas*
+
+- != No Igual
+
+- == Igual
+
+- < Menor que 
+
+- > Mayor que
+
+- <= Menor que o igual 
+
+- >= Mayor que o igual 
+
+- & y (and)
+
+- | o (or)
+
+- ! no
+
+
+
+## Tipos de datos
+
+Dentro de R podemos manejar 5 tipos de datos básicos.
+
+* Character
+  + "Hola mundo"
+  
+* Numeric (real or decimal)
+  + 1 ó 1.5
+
+* Integer
+  + 2L
+
+* Logical
+  + TRUE, FALSE
+
+* Complex
+  + (x + y) - 2
+  
+
+*Tip*
+Para conocer qué tipo o clase de datos son los valores de tus datos puedes usar el comando: class()
+
+
+##  Estructuras de datos
+
+A partir de la combinación de los diferentes tipos de datos 
+se generan estructuras que pueden ser de de diferentes tipos, 
+por ejemplo:
+
+* vector
+* matrix o array
+* data frame
+* list 
+
+
+## Estructura de datos 
+
+Las estructuras de datos se pueden clasificar por sus dimensiones (1, 2 o n) y si contienen el mismo tipo de dato (homogéneo) o bien diferente tipos de datos (heterogéneo). 
+
+Las estructuras de datos en R-base más cómunes son:
+
+Dimensiones | Homogéneo | Heterogéneo 
+----------- | --------- | -----------  
+1           | vector    | lista
+2           | matriz    | data frame 
+n           | array     |
+
+*En R no existen estructuras de cero dimensiones*
+
+
+##  Vector 
+
+Un Vector es la estructura de datos más básica en R. Este contiene elementos del mismo tipo que pueden ser: logical,
+integer, double, character, etc.
+
+Ejemplo:
+
+``` {r echo=TRUE}
+num <- c(1,2,3,4)
+letras <- c("a","b","c","d")
+```
+
+
+## Análisis de vectores
+
+Para conocer el tipo de datos que contiene el **Vector** así como su longitud se implementan las siguientes funciones:
+
+```{r echo=TRUE}
+typeof(letras);letras
+length(num);num
+
+```
+
+
+##  Acceder a los elementos de un vector
+
+Supongamos que usted desea extraer un valor específico de un **Vector**, pues existen diversas formas para hacerlo.
+
+
+```{r echo=TRUE}
+# Por posición
+calif_aca <- c(8,9,9,9,7,5,5,6,10,7)
+calif_aca[3]
+calif_aca[-3]
+
+# Por ordenadores lógicos
+calif_aca[c(T,T,F,F,F,F,F,F,T,T)]
+calif_aca[calif_aca < 8]
+calif_aca[calif_aca >= 8]
+
+```
+
+
+
+##  Acceder a los elementos de un vector continuación...
+
+Por Characteres
+
+```{r echo = T}
+calif_acaii <- c("Pedro" = 5,
+                 "Paco" = 6,
+                 "Juan" = 10)
+names(calif_acaii)
+calif_acaii["Pedro"]
+calif_acaii[c("Pedro","Juan")]
+```
+
+
+
+##  Matriz
+
+La **Matriz** es una estructura de datos bidimensional en la programación R, similar a un **Vector** adicionalmente  contiene columnas. Mientras que 
+
+*Creación de una Matriz*
+
+Existen diversas formas de crear una **Matriz**:
+
+```{r echo = T}
+matriz.1 <- matrix(1:9, nrow = 3, ncol = 3)
+matriz.2 <- matrix(1:9, nrow = 2)
+matrix(1:9, nrow=3, byrow=TRUE) 
+cbind(c(1,2,3),c(4,5,6))
+rbind(c(1,2,3),c(4,5,6))
+```
+
+
+## Array
+
+Un **Array** estructura de datos multidimensional en la programación R, es decir puede tener más de 2 dimensiones pero solo de un tipo de dato.
+
+Creación de un **Arreglo**
+
+```{r echo = T}
+
+arreglo <- array(1:12, c(3, 4, 5)) # el último número es el número de arreglos
+arreglo
+arreglo[,,1][4]
+
+``` 
+
+
+## Data frame
+
+El **DataFrame** es un arreglo versátil de datos, es perfecto para conjuntar información ordenada y relacionada de  distintos tipos (números, caracters, factores). Facilita el uso de formulas y funciones sobre los datos, sobre todo con el uso de columnas y factores que permite el agrupamiento de los datos. 
+Puede considerarse un agrupación de **Vectores**. Se  refieren a datos tabulares, compuestos por filas (observaciones) y columnas (mediciones), que a diferencia de la **Matriz** cada columna puede contener diferentes tipos de datos:
+
+```{r echo = T}
+data.frame(cbind("Nombres" = c("Paco","Pancho","Pedro"),
+                 "Calif" = 7:9,
+                 "Final" =c(F,T,T)
+                 )
+           )
+```
+
+
+## Creación de un Data Frame
+
+La forma básica de generar un **Data Frame** es a través de la función *data.frame*, sin embargo se implementan otras funciones para leer directamente las bases de datos:
+
+* Base1 <- read.csv()
+
+* library(xlsx)
+
+  + Base2 <- read.xls()
+
+* library(readxl)
+
+  + Base3 <- read_excel(file.choose())
+
+Como el **DataFrame es una estructura de dos dimensiones**, se necesitan unir dos o mas vectores para crear uno.  Por ejemplo:
+
+```{r echo=TRUE}
+vector.numerico <- 1:10
+vector.letras <- letters[1:10]
+dataframe.mixto <- data.frame(vector.numerico, vector.letras)
+dataframe.mixto
+```
+
+ **Nota:**
+Es importante tomar en cuenta que ambos vectores deben tener la misma dimensión.
+
+
+
+## Función `as.data.frame`
+
+Se pueden generar **DataFrames** a partir de matrices, de combinaciones de matrices y vectores. E incluso de una union de **DataFrames**:
+
+```{r echo=TRUE}
+data.frame.extra <- as.data.frame(cbind(dataframe.mixto, otras.letras = letters[15:24]))
+data.frame.extra
+```
+
+
+## Extracción de valores
+
+El dataframe es una estructura de datos de la que se pueden extraer valores combinando la posición de renglones y columnas.
+Ademas al tener nombres en las columnas e incluso los renglones se pueden usar estos para extraer los datos.
+
+#### Extraer renglones
+
+Podemos extraer todo el renglon al colocarlo en la posición delante de la coma y dejando la segund posición vacía
+
+```{r echo=TRUE}
+dataframe.mixto[3,]
+dataframe.mixto["4:",] #Por nombre de la fila
+
+```
+
+
+## Extraer Columnas
+
+Esta es una tarea mas común, la cual se puede hacer también por posición o nombre.
+Podemos extraer por lo tanto toda la columna de números de dos formas como un vector:
+
+```{r echo=TRUE}
+dataframe.mixto[,2]
+dataframe.mixto[2]
+dataframe.mixto[,"vector.letras"] # por nombre
+```
+
+
+
+## Combinando columnas y renglones
+
+Podemos seleccionar valores específicos, rangos de valores e incluso usar nombres en conjunto.
+
+```{r echo=TRUE}
+dataframe.mixto[4,2]
+```
+
+Con nombres:
+
+```{r echo=TRUE}
+dataframe.mixto[2,"vector.letras"]
+```
+
+Incluso rangos:
+
+```{r echo=TRUE}
+dataframe.mixto[3:5,"letras"]
+```
+
+
+## Selección alternativa con `$`
+
+Podemos obtener el vector de una columna usando el simbolo `$`.
+
+```{r echo=TRUE}
+dataframe.mixto$vector.letras
+```
+
+Y esta misma nomenclatura se puede mezclar con la posición del valor
+
+```{r echo=TRUE}
+dataframe.mixto$vector.letras[7]
+```
+
+### Importante
+
+Cada vez que extraemos una letra aparece un letrero de **Levels**. Este se genera al convertir un caracter en un factor
+que es una categoría cuya ventaja es que se representa internamente con números pero se imprime en pantalla como caracters
+haciendolo fácil de leer y pequeño a nivel de memoria. 
+Esto ocurre porque `data.frame()` y `as.data.frame()` en automático convierten todos los caracteres a factores.
+Esta _"feature"_ puede ser un poco molesta y se puede revertir con la función `as.character()`.
+
+
+
+## listas
+
+Son estructuras que pueden combinar cualquier tipo de datos y otras estructuras. Permitiendo así aglomerar muchos tipos  de datos en un solo objeto. Su uso requiere práctica, pero una vez dominadas permiten acelerar tareas de manera lógica.
+
+Las listas se crean de la unión de otras estructuras, por ejemplo de **vectores**, **data.frames**, **matrices** e incluso **listas**.
+
+
+```{r echo=TRUE}
+vector.numerico <- sample(seq(20, 100, by = 10), 20, replace = TRUE)
+vector.alphabetico <- sample(letters, 10)
+matriz.aleatoria <- matrix(sample(1:300, 40), ncol = 5)
+lista.heterogenea <- list(vector.numerico, vector.alphabetico, matriz.aleatoria)
+lista.heterogenea
+```
+
